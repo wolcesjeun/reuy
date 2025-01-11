@@ -103,7 +103,8 @@ export default function Dashboard() {
     setResult("");
     setError("");
     setCurrentQuery(null);
-    router.push("/dashboard");
+    setShowUpload(true);
+    router.push("/dashboard", undefined, { shallow: true });
   };
 
   return (
